@@ -1,0 +1,11 @@
+Lista personalizada de directorios
+Volume in drive C is Windows
+ Volume Serial Number is 665E-AE4A
+
+ Directory of C:\Users\user
+
+05/24/2018  02:34 PM    <DIR>          .android
+04/14/2018  03:42 PM    <DIR>          .AndroidStudio3.1
+04/14/2018  03:55 PM    <DIR>          .argouml
+              13 File(s)         16,142 bytes
+              45 Dir(s)  137,923,686,400 bytes free
