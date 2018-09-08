@@ -6,4 +6,4 @@ def volumen_cuboide(Largo, Ancho, Alto):
         Volumen = Largo*Ancho*Alto
         return Volumen
     else:
-        return "Error en las entradas"
+        return "Error en las entradas, deben ser valores mayores a cero"

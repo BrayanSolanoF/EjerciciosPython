@@ -1,7 +1,7 @@
 #Programa: fun Ecuacion cuadratica
 #Entrada: valores de a,b y c
 #Salida:Raices de la ecuacion x1 y x2
-#Restricciones:No
+#Restricciones:Dos valores con signos iguales de forma consecutiva y el tercero con signo diferente
 #version:2.0
 #Formula: ax al cuadrado + bx + c, con a diferente de cero, b y c son reales
 #x=(-b(+-)Raiz(b**2-4+a*c))/2a

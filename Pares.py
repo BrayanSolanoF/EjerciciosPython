@@ -5,8 +5,6 @@
 -Restricciones: Ingresar valores en forma de lista
 -Version:1.0
 """
-
-
 def pares(lista):
     if not isinstance(lista,list)or lista==[]:
         return None

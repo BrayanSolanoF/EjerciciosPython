@@ -7,17 +7,16 @@
 #x=(-b(+-)Raiz(b**2-4+a*c))/2a
 #Agregar un if para verificar si a es diferente de 0 y cumplir la condicion de cuadratica
 from math import sqrt
-def ecua_cuadratica(A,B,C):
-    if A != 0: #verificar si A diferente de cero
-        Discriminante = (B**2-4*A*C)
+def ecuacion_cuadratica(a,b,c):
+    if a != 0:
+        Discriminante = (b**2-4*a*c)
         if Discriminante > 0:
-            Raiz = pow(Discriminante, 0.5)
-            print("Raiz 2", Raiz)
-            Raiz1 = (-B + Raiz)/(2*A)
-            Raiz2 = (-B - Raiz)/(2*A)
+            Raiz = sqrt(b**2-4*a*c)
+            Raiz1 = (-b+ Raiz)/(2*a)
+            Raiz2 = (-b-Raiz)/(2*a)
             return Raiz1, Raiz2
         else:
-            return "El discriminantes menor a cero, Ecuaciòn con Raices imaginarias"
+            return "Ecuaciòn con Raices imaginarias"
     else:
         return "La ecuacion no es cuadratica"
     
