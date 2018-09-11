@@ -1,12 +1,12 @@
-·#Determinar si un numero tieen ceros usando procesos de Recursividad de Pila
+#Determinar si un numero tiene ceros usando procesos de Recursividad de Pila
 def tiene_ceros(num):
     if isinstance(num, int):
-        return aux_tiene_ceros(Num)
+        return aux_tiene_ceros(num)
         #if num==0:
     else:
         return "No es un entero"
 def aux_tiene_ceros(num):
-    if num ==0:
+    if num == 0:
         return False
     else:
         if(num%10)==0:
@@ -14,5 +14,3 @@ def aux_tiene_ceros(num):
         else:
             return aux_tiene_ceros(num//10)
 #Agregar si ingreso un cero que solo me de como resultado tener un cero
-
-            

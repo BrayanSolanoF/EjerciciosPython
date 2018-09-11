@@ -5,8 +5,6 @@
 -Restricciones: Ingresar valores en forma de lista
 -Version:1.0
 """
-
-
 def pares(lista):
     if isinstance(lista,list)or lista==[]:
         return pares_aux(lista)
@@ -20,3 +18,5 @@ def pares_aux(lista):
         else: return pares_aux(lista[1:])
 
     else: return[]
+
+print(pares([1,2,5,6,8]))

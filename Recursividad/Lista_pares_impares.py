@@ -1,8 +1,8 @@
-def pares_impares(lista):
+"""def pares_impares(lista):
     if not isinstance(lista,list) or lista==[]:
         return None
     return pares_impares_aux(lista,[],[])
-def pares_impares_aux()
+def pares_impares_aux()"""
 
 
 
