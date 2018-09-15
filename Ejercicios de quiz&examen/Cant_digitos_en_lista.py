@@ -16,6 +16,17 @@
 
 
 #****************************************************************************************
-
+# [0,245,5] = input
+# [1,3,1] = output
 def cant_digitos(lista):
-    if isinstance (lista,list):
+    if not isinstance (lista,list) or lista==[]:
+        return None
+    else: return cant_digitos_aux(lista, [])
+def cant_digitos_aux(lista, lista2):
+    if lista == []:
+        return lista2
+    elif lista[0] == 0:
+        return cant_digitos_aux(lista[1:], lista2 + [1] )
+    elif lista[0] != 0:
+        return cant_digitos_aux(lista[1:], lista2+[lista[0]])
+    else: return cant_digitos_aux(lista[1:], lista2)

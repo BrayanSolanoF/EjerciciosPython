@@ -1,7 +1,7 @@
 def pares_list(lista):
-    if isinstance(lista,list) or lista==[]:
-        return pares_list_aux(lista,[])
-    else: return "Error"
+    if not isinstance(lista,list) or lista==[]:
+        return None
+    else: return pares_list_aux(lista,[])
 def pares_list_aux(lista, lista2):
     if lista==[]:
         return lista2
