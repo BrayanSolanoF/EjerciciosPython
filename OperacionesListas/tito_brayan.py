@@ -18,15 +18,22 @@
 #****************************************************************************************
 # [0,245,5] = input
 # [1,3,1] = output
-def cant_digitos(lista):
-    if not isinstance (lista,list) or lista==[]:
-        return None
-    else: return cant_digitos_aux(lista, [])
-def cant_digitos_aux(lista, lista2):
-    if lista == []:
-        return lista2
-    elif lista[0] == 0:
-        return cant_digitos_aux(lista[1:], lista2 + [1])
-    elif lista[0] != 0:
-        return cant_digitos_aux(lista[1:], lista2 + ([1]+[lista[0]//10]))
-    else: return cant_digitos_aux(lista[1:], lista2)
+
+def cantidad(lista):
+    if isinstance(lista, list)and(lista!=[]):
+        return cantidad_aux(lista)
+    else:
+        return "Error"
+
+def cantidad_aux(lista):
+    if lista==[]:
+        return []
+    else:
+        return [cantidad_aux2(lista[0], False)]+cantidad_aux(lista[1:])
+
+
+def cantidad_aux2(num, validador):
+    if num==0 and validador:
+        return 0
+    else:
+        return 1+cantidad_aux2(num//10, True)

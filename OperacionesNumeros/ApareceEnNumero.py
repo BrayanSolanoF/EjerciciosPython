@@ -16,15 +16,22 @@
 
 
 #****************************************************************************************
-def sumar(lista):
-    if isinstance(lista, list):
-        return sumar_lista(lista)
-    else: return "El objeto ingresado no es una lista."
 
-def sumar_lista(lista):
-    if lista ==[]:
+
+def aparece(num, dig):
+    if ((isinstance(num,int) and isinstance(dig, int)
+         and dig >= 0 and dig<=9 and num>0)):
+        return aparece_aux(num, dig)
+    else: return "Error"
+def aparece_aux(num, dig):
+    if num == 0:
         return 0
-    elif isinstance(lista[0], list):
-            return sumar_lista(lista[0])+ sumar_lista(lista[1:])
-        #return sumar_lista(lista[0] + lista[1:])
-    else: return lista[0] + sumar_lista(lista[1:])
+    elif num % 10 == dig:
+        return 1 + aparece_aux(num // 10, dig)
+    else: return aparece_aux(num//10, dig)
+        
+
+
+
+
+
