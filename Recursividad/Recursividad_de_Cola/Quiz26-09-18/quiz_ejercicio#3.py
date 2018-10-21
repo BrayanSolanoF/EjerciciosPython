@@ -32,4 +32,4 @@ def Circulo_rad1 (Num):
     else:
         return "Debe ser un numero entero"
 
-def Circulo_rad1_aux(N,res):
+def Circulo_rad1_aux(Num,res):

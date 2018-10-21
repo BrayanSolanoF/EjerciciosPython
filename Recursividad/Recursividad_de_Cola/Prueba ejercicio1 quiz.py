@@ -1,23 +1,3 @@
-"""
-# Instituto Tecnologico de Costa Rica
-
-
-# Ingenieria en Computadores
-
-
-#Programa: fun_muestra
-#Lenguaje: Python 3.6.4
-#Autor: Brayan Solano Fonseca
-#Version: 1.0
-#Fecha Ultima Modificacion: Septiembre 26/2018
-#Entradas: lista de calificaciones
-#Restricciones: Ingresar valores en forma de lista
-#Salida: Obtengo tres valores diferentes
-1-NuevaLista con sin los extremos
-2-Lista original
-3-Diferencia entre promedios de lista
-"""
-#Lista por evaluar ([5,8,7,4,3,2])
 ########################################################
 
 """
@@ -29,7 +9,7 @@ la puntuacion obtenida por cada atleta con la eliminacion, la puntuacion sin la
 eliminacion y la diferencia.
 
 """
-#Retorna la lista Nueva despues de realizar la eliminacion.
+
 
 def muestra(lista):
     min = get_min(lista, 10)
@@ -87,10 +67,19 @@ def get_max(lista, max):
         return get_max(lista[1:], max)
 
 
-print(muestra([5,8,7,4,3,2]))
+print(muestra([5, 8, 7]))
 ##############################################################
 
-#Retorna la lista original sin realizar la eliminacion.
+"""
+Siete jueces dan su evaluacion sobre el desempeño de unos atletas.
+Su evaluacion es una puntuacion de 1 a 10. Para eliminar el posible
+sesgo de los jueces, la organizacion aplica la eliminacion de los puntajes extremos
+(superior e inferior) para calcular el promedio. Construya un programa que muestre
+la puntuacion obtenida por cada atleta con la eliminacion, la puntuacion sin la
+eliminacion y la diferencia.
+
+"""
+
 
 def muestra(lista):
     min = get_min(lista, 10)
@@ -148,13 +137,21 @@ def get_max(lista, max):
         return get_max(lista[1:], max)
 
 
-print(muestra([5,8,7,4,3,2]))
+print(muestra([5, 8, 7]))
 
 
 
 ########################################################
+"""
+Siete jueces dan su evaluacion sobre el desempeño de unos atletas.
+Su evaluacion es una puntuacion de 1 a 10. Para eliminar el posible
+sesgo de los jueces, la organizacion aplica la eliminacion de los puntajes extremos
+(superior e inferior) para calcular el promedio. Construya un programa que muestre
+la puntuacion obtenida por cada atleta con la eliminacion, la puntuacion sin la
+eliminacion y la diferencia.
 
-#Retorna la diferencias entre los promedios de ambas listas.
+"""
+
 
 def muestra(lista):
     min = get_min(lista, 10)
@@ -215,5 +212,5 @@ def get_max(lista, max):
         return get_max(lista[1:], max)
 
 
-print(muestra([5,8,7,4,3,2]))
+print(muestra([5, 8, 7]))
 
